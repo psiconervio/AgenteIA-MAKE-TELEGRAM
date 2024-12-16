@@ -38,7 +38,7 @@ async function respondWithChatGPT(question) {
       headers: { Authorization: `Bearer ${OPENAI_API_KEY}` },
     }
   );
-  return { answer: chatResponse.data.choices[0].message.content, model: "ChatGPT (GPT-4)" };
+  return { answer: chatResponse.data.choices[0].message.content, model: "ChatGPT (GPT-3.5)" };
 }
 
 // Guardar interacción en la base de datos
