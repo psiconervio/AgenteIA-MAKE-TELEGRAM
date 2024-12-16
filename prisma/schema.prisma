@@ -17,5 +17,6 @@ model Interaction {
   id        Int      @id @default(autoincrement())
   question  String
   answer    String
+  userId    String   // Este campo debe estar presente
   createdAt DateTime @default(now())
 }
